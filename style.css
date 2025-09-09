@@ -1,0 +1,286 @@
+body {
+/* Navbar menu container styling */
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+/* Site container styling */
+.site-container {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(46,49,49,0.10);
+    padding: 0 0 2rem 0;
+}
+/* Executive Summary slogan and hero image styling */
+.slogan-block {
+    text-align: center;
+    margin: 1.2rem 0 0.7rem 0;
+}
+.slogan {
+    font-size: 1.25em;
+    color: #4e4376;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+.hero-image {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.hero-image img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(46,49,49,0.10);
+}
+.tab-icon {
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.4em;
+}
+/* Community & Resources section styling */
+.community-section {
+    margin-bottom: 2.5rem;
+    padding: 1.2rem 1.5rem;
+    background: #f7f9fb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.05);
+}
+.community-section h3 {
+    color: #2b5876;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+}
+.community-section ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2em;
+}
+.community-section li {
+    margin-bottom: 0.7em;
+    font-size: 1.08em;
+    color: #333;
+}
+.community-section p {
+    font-size: 1.08em;
+    color: #444;
+}
+/* Challenges & Future Directions section styling */
+.challenges-section {
+    margin-bottom: 2.5rem;
+    padding: 1.2rem 1.5rem;
+    background: #f7f9fb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.05);
+}
+.challenges-section h3 {
+    color: #2b5876;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+}
+.challenges-section ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2em;
+}
+.challenges-section li {
+    margin-bottom: 0.7em;
+    font-size: 1.08em;
+    color: #333;
+}
+/* Tutorials & Guides section styling */
+.tutorial-section {
+    margin-bottom: 2.5rem;
+    padding: 1.2rem 1.5rem;
+    background: #f7f9fb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.05);
+}
+.tutorial-section h3 {
+    color: #2b5876;
+    margin-top: 0;
+}
+.section-intro {
+    font-size: 1.15em;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+.code-block {
+    background: #e3eafc;
+    border-radius: 6px;
+    padding: 1em;
+    font-size: 1.05em;
+    overflow-x: auto;
+    margin: 1em 0;
+    box-shadow: 0 1px 4px rgba(46,49,49,0.07);
+}
+.code-block code {
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+    color: #2b5876;
+    background: none;
+    font-size: 1em;
+}
+/* Video grid styling for embedded YouTube videos */
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+}
+.video-item {
+    flex: 1 1 360px;
+    max-width: 360px;
+    text-align: center;
+}
+.video-item p {
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #2b5876;
+    font-weight: 500;
+}
+@media (max-width: 900px) {
+    .video-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-item {
+        max-width: 100%;
+    }
+}
+/* Feature comparison table styling */
+.feature-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+}
+.feature-table th, .feature-table td {
+    padding: 0.5em;
+    border: 1px solid #bfcbe6;
+    text-align: left;
+}
+.feature-table thead tr {
+    background: #e3eafc;
+}
+.feature-table tbody tr:nth-child(even) {
+    background: #f7f9fb;
+}
+.feature-table a {
+    color: #2b5876;
+    text-decoration: underline;
+    font-weight: 500;
+}
+/* Main research links styling */
+.main-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.main-links a {
+    display: inline-flex;
+    align-items: center;
+    background: #e3eafc;
+    color: #2b5876;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7em 1.3em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.07);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    font-size: 1.08em;
+}
+.main-links a:hover {
+    background: #d1e0fa;
+    color: #4e4376;
+    box-shadow: 0 4px 16px rgba(46,49,49,0.13);
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f9fb;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(46, 49, 49, 0.08);
+}
+header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+#tabs {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+.tab {
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px 6px 0 0;
+    background: rgba(255,255,255,0.08);
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+.tab.active {
+    background: #fff;
+    color: #2b5876;
+    box-shadow: 0 -2px 8px rgba(46, 49, 49, 0.08);
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(46, 49, 49, 0.08);
+    padding: 2rem 2.5rem;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.4s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+footer {
+    text-align: center;
+    padding: 1.2rem 0;
+    background: #2b5876;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 0 0 10px 10px;
+    font-size: 1rem;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 1rem 0.5rem;
+    }
+    #tabs {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+}
