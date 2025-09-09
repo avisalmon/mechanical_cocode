@@ -42,43 +42,290 @@
                     <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/pdf.svg" alt="PDF" style="height:1.2em;vertical-align:middle;margin-right:0.4em;"> Download Research (PDF)
                 </a>
             </div>
-            <p>Text-based mechanical design description languages are emerging as powerful complements to traditional CAD tools. They enable engineers to programmatically define mechanical structures, assemblies, and system behavior using code or scripts, analogous to how hardware description languages (HDLs) describe electronic circuits. This approach brings benefits in parametric precision, automation, and version control.</p>
-            <p>While mechanical design has been dominated by GUI-based CAD software, a growing ecosystem of code-centric CAD tools (e.g. OpenSCAD, CadQuery, Onshape FeatureScript) and system modeling languages (e.g. Modelica) has gained traction. These allow complex designs to be described with textual commands, equations, and algorithms.</p>
-            <p>A key driver of renewed interest is the potential for AI-assisted co-coding: large language models (LLMs) and tools like GitHub Copilot can understand and generate code, making text-based design more accessible. Recent research and industry experiments show LLMs generating CAD scripts from natural language, auto-completing parametric models, and assisting in design space exploration.</p>
-            <p>This site presents the state-of-the-art in text-based mechanical design languages, compares their capabilities to HDLs, highlights current tools, and examines how they can be leveraged in co-coding with AI. Explore the tabs above for more details, case studies, tutorials, and resources.</p>
+            
+            <div class="executive-summary">
+                <p class="summary-lead">Text-based mechanical design description languages represent a paradigm shift that is transforming how engineers conceptualize, create, and collaborate on mechanical systems. Like hardware description languages (HDLs) revolutionized electronic circuit design, these code-centric approaches are bringing unprecedented precision, automation, and collaborative capabilities to mechanical engineering.</p>
+                
+                <div class="key-points">
+                    <h3>Key Revolutionary Aspects</h3>
+                    <div class="point-grid">
+                        <div class="point-item">
+                            <h4>🔧 Parametric Precision</h4>
+                            <p>Programmatic control enables mathematical relationships between design elements, creating intelligent models that adapt to changing requirements while maintaining design intent.</p>
+                        </div>
+                        <div class="point-item">
+                            <h4>🤖 AI Integration</h4>
+                            <p>Large Language Models can understand and generate mechanical design code, enabling natural language to CAD transformation and intelligent design assistance.</p>
+                        </div>
+                        <div class="point-item">
+                            <h4>📊 Version Control</h4>
+                            <p>Text-based designs leverage software development practices like Git, enabling precise change tracking, collaborative editing, and design history management.</p>
+                        </div>
+                        <div class="point-item">
+                            <h4>🔄 Automation</h4>
+                            <p>Scripted designs enable mass customization, automated variant generation, and integration with manufacturing pipelines and digital twins.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ecosystem-overview">
+                    <h3>The Growing Ecosystem</h3>
+                    <p>A vibrant ecosystem of tools has emerged spanning multiple domains:</p>
+                    <ul class="ecosystem-list">
+                        <li><strong>Geometry Modeling:</strong> <a href="https://openscad.org/" target="_blank">OpenSCAD</a>, <a href="https://cadquery.readthedocs.io/" target="_blank">CadQuery</a>, <a href="https://featurescript.onshape.com/" target="_blank">Onshape FeatureScript</a>, and emerging tools like <a href="https://zoo.dev" target="_blank">KittyCAD's KCL</a></li>
+                        <li><strong>System Simulation:</strong> <a href="https://www.modelica.org/" target="_blank">Modelica</a> for multi-domain physical systems, widely adopted in automotive and aerospace industries</li>
+                        <li><strong>Specialized Applications:</strong> URDF for robotics, G-code for manufacturing, and domain-specific languages for various engineering applications</li>
+                    </ul>
+                </div>
+
+                <div class="industry-impact">
+                    <h3>Industry Adoption & Impact</h3>
+                    <div class="impact-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">Major Automotive OEMs</span>
+                            <span class="stat-desc">Use Modelica for vehicle system design (Audi, BMW, Ford, Toyota)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Millions of Models</span>
+                            <span class="stat-desc">OpenSCAD designs shared on Thingiverse with parametric customization</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">69% Accuracy</span>
+                            <span class="stat-desc">AI models achieving exact match on CAD code generation tasks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-highlights">
+                    <h3>Latest Research Breakthroughs</h3>
+                    <ul>
+                        <li><strong>Text2CadQuery:</strong> Fine-tuned LLMs achieving 69% exact match accuracy in generating parametric CAD models from natural language</li>
+                        <li><strong>AIDL (AI-Assisted Design Language):</strong> Hierarchical constraint-based languages that enable LLMs to generate geometrically valid designs</li>
+                        <li><strong>OnshapeGPT Prototypes:</strong> Industry experiments with AI-driven geometry creation in professional CAD platforms</li>
+                        <li><strong>Multimodal Integration:</strong> Vision-language models providing visual feedback loops for code-based design iteration</li>
+                    </ul>
+                </div>
+
+                <div class="future-vision">
+                    <h3>The Future of Mechanical Design</h3>
+                    <p>This comprehensive research explores how the convergence of text-based design languages and AI is creating new possibilities:</p>
+                    <ul>
+                        <li>Engineers describing requirements in natural language and receiving fully parametric, manufacturable designs</li>
+                        <li>Collaborative design workflows leveraging software development best practices</li>
+                        <li>Integration of geometric modeling with system simulation and manufacturing constraints</li>
+                        <li>Democratization of complex design capabilities through AI-assisted coding</li>
+                    </ul>
+                </div>
+
+                <p class="site-navigation"><strong>Navigate this research:</strong> Use the tabs above to explore historical context, current solutions, AI integration capabilities, hands-on tutorials, challenges and future directions, and community resources. Each section provides in-depth analysis supported by real-world examples and cutting-edge research.</p>
+            </div>
         </section>
         <section id="background" class="tab-content">
             <h2>Historical & Conceptual Background</h2>
-            <p>
-                Mechanical design has evolved from hand-drawn sketches and interactive CAD software to the emergence of text-based description languages. The idea of describing mechanical structures programmatically dates back to the 1970s, when researchers developed formal languages for solid modeling, such as <a href="https://en.wikipedia.org/wiki/Part_and_Assembly_Description_Language" target="_blank">PADL</a> (Part and Assembly Description Language) by Herb Voelcker. PADL influenced early CAD systems and introduced the concept of capturing geometry in a human-readable code format.
-            </p>
-            <p>
-                The mainstream adoption of CAD was driven by graphical user interfaces, starting with Ivan Sutherland's <a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank">Sketchpad</a> in 1963, which revolutionized design through visual interaction. However, the rise of parametric CAD in the 1980s and 1990s reintroduced programming concepts, allowing users to define dimensional parameters and constraints similar to code variables. Despite these advances, most CAD models remained stored in proprietary binary formats, limiting transparency and version control.
-            </p>
-            <p>
-                The 2000s and 2010s saw open-source communities embrace script-based CAD. <a href="https://openscad.org/" target="_blank">OpenSCAD</a>, released in 2010, exemplifies this approach by enabling designers to write scripts that describe constructive solid geometry (CSG) operations. This method provides full parametric control, making designs easy to edit, version, and reuse. The concept is analogous to hardware engineers using <a href="https://en.wikipedia.org/wiki/VHDL" target="_blank">VHDL</a> or <a href="https://en.wikipedia.org/wiki/Verilog" target="_blank">Verilog</a> for digital circuits.
-            </p>
-            <p>
-                The appeal of text-based mechanical design lies in its precision, repeatability, and transparency. Textual descriptions capture design logic—such as loops, conditionals, and mathematical formulas—that are cumbersome to manage in GUI-based tools. This fosters the creation of parametric templates and reusable models, and makes the design intent clear to both humans and machines.
-            </p>
-            <p>
-                Historically, text-based modeling was a niche skill, mostly used by programmers and researchers. Most mechanical engineers preferred interactive CAD tools, especially for complex or organic shapes. Text-based approaches were practical for highly regular or parametric designs, such as gears, enclosures, and lattice structures, but less so for free-form surfaces. As a result, code-based CAD users represented only a small fraction of the overall market.
-            </p>
-            <p>
-                Today, the landscape is changing. The integration of AI and large language models (LLMs) is making text-based design more accessible and powerful. Tools like <a href="https://cadquery.readthedocs.io/en/latest/" target="_blank">CadQuery</a> and <a href="https://www.modelica.org/" target="_blank">Modelica</a> are expanding the possibilities for programmatic mechanical design and system simulation. The combination of code-centric CAD and AI-assisted co-coding is driving innovation in both industry and maker communities.
-            </p>
-            <ul>
-                <li><a href="https://openscad.org/" target="_blank">OpenSCAD</a> – Scripted 3D CAD modeling</li>
-                <li><a href="https://cadquery.readthedocs.io/en/latest/" target="_blank">CadQuery</a> – Python-based CAD scripting</li>
-                <li><a href="https://www.modelica.org/" target="_blank">Modelica</a> – Equation-based system simulation</li>
-                <li><a href="https://en.wikipedia.org/wiki/Part_and_Assembly_Description_Language" target="_blank">PADL</a> – Early solid modeling language</li>
-                <li><a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank">Sketchpad</a> – The first graphical CAD system</li>
-                <li><a href="https://en.wikipedia.org/wiki/Parametric_modeling" target="_blank">Parametric Modeling</a> – CAD with programmable parameters</li>
-                <li><a href="https://en.wikipedia.org/wiki/Hardware_description_language" target="_blank">HDLs (VHDL, Verilog)</a> – Hardware description languages for electronics</li>
-            </ul>
-            <p>
-                For a deeper dive, see the <a href="Text-Based Mechanical Description Languages and Co-Coding for Mechanical Design.pdf" target="_blank">full research report (PDF)</a> or <a href="Text-Based Mechanical Description Languages and Co-Coding for Mechanical Design.docx" target="_blank">download the DOCX</a>.
-            </p>
+            
+            <div class="timeline-section">
+                <h3>Evolution of Mechanical Design Paradigms</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1963</div>
+                        <div class="timeline-content">
+                            <h4>Sketchpad Revolution</h4>
+                            <p>Ivan Sutherland's <a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank">Sketchpad</a> introduced the first graphical user interface for design, establishing the foundation for visual interaction paradigms that would dominate CAD for decades.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1970s</div>
+                        <div class="timeline-content">
+                            <h4>PADL - The First Text-Based CAD Language</h4>
+                            <p>Herb Voelcker developed <a href="https://en.wikipedia.org/wiki/Part_and_Assembly_Description_Language" target="_blank">PADL</a> (Part and Assembly Description Language), a formal language for solid modeling that was ahead of its time. PADL introduced the revolutionary concept of capturing geometry in human-readable code format, influencing early CAD systems and establishing the theoretical foundation for programmatic design.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1980s-90s</div>
+                        <div class="timeline-content">
+                            <h4>Parametric CAD Renaissance</h4>
+                            <p>The rise of parametric CAD reintroduced programming concepts through dimensional parameters and constraints. However, these powerful capabilities remained locked within proprietary binary formats, limiting transparency and collaborative potential.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2010</div>
+                        <div class="timeline-content">
+                            <h4>OpenSCAD: Open Source Text-Based CAD</h4>
+                            <p><a href="https://openscad.org/" target="_blank">OpenSCAD</a> emerged as the first widely adopted open-source text-based CAD tool, demonstrating that script-based design could be both powerful and accessible. It enabled the maker community to create parametric, version-controllable designs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2020s</div>
+                        <div class="timeline-content">
+                            <h4>AI-Assisted Design Era</h4>
+                            <p>Large Language Models and tools like GitHub Copilot began revolutionizing text-based design, making programmatic CAD accessible to non-programmers and enabling natural language to CAD transformation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conceptual-foundations">
+                <h3>Conceptual Foundations & Philosophy</h3>
+                
+                <div class="philosophy-grid">
+                    <div class="philosophy-item">
+                        <h4>🎯 Precision & Repeatability</h4>
+                        <p>Text descriptions are unambiguous and capture design logic through loops, conditionals, and mathematical formulas that would be cumbersome to manage through GUI interactions. Every aspect of the design process is explicit and reproducible.</p>
+                    </div>
+                    
+                    <div class="philosophy-item">
+                        <h4>🔍 Transparency</h4>
+                        <p>Unlike opaque binary CAD files, text-based designs can be read and understood by both humans and machines. The complete construction process is visible, making design intent clear and modifications straightforward.</p>
+                    </div>
+                    
+                    <div class="philosophy-item">
+                        <h4>🔄 Parametric Templates</h4>
+                        <p>Designs become easily adjustable templates where changing a few values regenerates the entire model. This fosters reuse and adaptation, enabling mass customization and design variant exploration.</p>
+                    </div>
+                    
+                    <div class="philosophy-item">
+                        <h4>🤝 Collaborative Engineering</h4>
+                        <p>Text files enable software development practices like version control, diff comparison, and collaborative editing. Teams can track changes precisely and merge contributions seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market-evolution">
+                <h3>Market Evolution & Adoption Patterns</h3>
+                
+                <div class="adoption-analysis">
+                    <div class="adoption-phase">
+                        <h4>Early Phase (1970s-2000s): Research & Niche Use</h4>
+                        <ul>
+                            <li>Text-based modeling limited to researchers and programmers</li>
+                            <li>Complex free-form surfaces easier to sculpt in GUI environments</li>
+                            <li>Code-based CAD represented only ~1% of overall CAD market</li>
+                            <li>Primarily used for highly regular/parametric designs (gears, enclosures, lattice structures)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="adoption-phase">
+                        <h4>Growth Phase (2000s-2010s): Open Source Community</h4>
+                        <ul>
+                            <li>OpenSCAD democratized script-based CAD for maker communities</li>
+                            <li>Thingiverse Customizer enabled GUI interaction with parametric code</li>
+                            <li>Open hardware projects adopted text-based designs for reproducibility</li>
+                            <li>Version control advantages became apparent for collaborative projects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="adoption-phase">
+                        <h4>Acceleration Phase (2010s-Present): Industry Integration</h4>
+                        <ul>
+                            <li>Onshape introduced FeatureScript for commercial CAD platforms</li>
+                            <li>Modelica gained widespread adoption in automotive and aerospace</li>
+                            <li>AI/LLM integration dramatically lowered barriers to entry</li>
+                            <li>Hybrid GUI-code workflows emerged in professional environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paradigm-comparison">
+                <h3>Text-Based vs. Traditional CAD Paradigms</h3>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Traditional GUI-Based CAD</th>
+                            <th>Text-Based Design Languages</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Design Process</strong></td>
+                            <td>Interactive sketching, feature manipulation</td>
+                            <td>Declarative programming, algorithmic construction</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Parametrization</strong></td>
+                            <td>GUI-driven parameter editing</td>
+                            <td>Direct variable manipulation in code</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Version Control</strong></td>
+                            <td>Binary file comparison, limited diff capability</td>
+                            <td>Line-by-line change tracking, Git integration</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Collaboration</strong></td>
+                            <td>File sharing, check-in/check-out systems</td>
+                            <td>Distributed version control, merge capabilities</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Automation</strong></td>
+                            <td>Macro recording, limited scripting</td>
+                            <td>Full programmatic control, AI assistance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Learning Curve</strong></td>
+                            <td>Intuitive for visual thinkers</td>
+                            <td>Requires programming concepts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Design Intent</strong></td>
+                            <td>Implicit in feature history</td>
+                            <td>Explicit in code logic and comments</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="current-landscape">
+                <h3>Today's Landscape: Convergence & Innovation</h3>
+                
+                <p>The landscape is rapidly evolving as the boundaries between text-based and traditional CAD blur. Modern developments include:</p>
+                
+                <div class="landscape-trends">
+                    <div class="trend-item">
+                        <h4>🔬 AI-Powered Design Generation</h4>
+                        <p>Large Language Models can now interpret natural language design requirements and generate functional CAD code, dramatically lowering the barrier to entry for programmatic design.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h4>🏭 Industrial Adoption</h4>
+                        <p>Major automotive manufacturers (Audi, BMW, Ford, Toyota) extensively use Modelica for vehicle system design, while companies like PTC explore AI integration in commercial CAD platforms.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h4>🌐 Cloud-Native Platforms</h4>
+                        <p>Services like KittyCAD are building cloud-native CAD platforms specifically designed for text-based design and AI integration, suggesting a fundamental shift in how CAD infrastructure is conceived.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h4>🔧 Hybrid Workflows</h4>
+                        <p>Modern CAD platforms increasingly offer both GUI and scripting interfaces, allowing engineers to choose the best approach for each design task or combine both methods seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="key-resources">
+                <h3>Key Historical References & Resources</h3>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Part_and_Assembly_Description_Language" target="_blank">PADL (Part and Assembly Description Language)</a> - The foundational text-based solid modeling language</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank">Sketchpad</a> - The first graphical CAD system that established GUI paradigms</li>
+                    <li><a href="https://openscad.org/" target="_blank">OpenSCAD</a> - The breakthrough open-source text-based CAD tool</li>
+                    <li><a href="https://cadquery.readthedocs.io/" target="_blank">CadQuery</a> - Modern Python-based CAD scripting framework</li>
+                    <li><a href="https://www.modelica.org/" target="_blank">Modelica</a> - Industry-standard equation-based system modeling language</li>
+                    <li><a href="https://featurescript.onshape.com/" target="_blank">Onshape FeatureScript</a> - Commercial CAD platform's scripting language</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Hardware_description_language" target="_blank">Hardware Description Languages</a> - The electronic design automation precedent</li>
+                </ul>
+            </div>
+
+            <div class="section-footer">
+                <p><strong>Deep Dive:</strong> For comprehensive historical analysis and detailed technical comparisons, see the <a href="Text-Based Mechanical Description Languages and Co-Coding for Mechanical Design.pdf" target="_blank">full research report (PDF)</a> or <a href="Text-Based Mechanical Description Languages and Co-Coding for Mechanical Design.docx" target="_blank">download the DOCX version</a>.</p>
+            </div>
         </section>
         <section id="solutions" class="tab-content">
             <h2>Survey of Current Solutions</h2>

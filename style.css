@@ -16,6 +16,151 @@ body {
     box-shadow: 0 8px 32px rgba(46,49,49,0.10);
     padding: 0 0 2rem 0;
 }
+/* Executive Summary styling */
+.executive-summary {
+    margin-top: 2rem;
+}
+
+.summary-lead {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #2b5876;
+    font-weight: 500;
+    background: #f0f4f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #4e4376;
+    margin-bottom: 2rem;
+}
+
+.key-points {
+    margin: 2rem 0;
+}
+
+.point-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.point-item {
+    background: #f9fbfd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e1e8ed;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.06);
+}
+
+.point-item h4 {
+    margin: 0 0 0.8rem 0;
+    color: #2b5876;
+    font-size: 1.1em;
+}
+
+.point-item p {
+    margin: 0;
+    color: #444;
+    line-height: 1.5;
+}
+
+.ecosystem-overview {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    background: #f0f7ff;
+    border-radius: 10px;
+    border: 1px solid #d1e3f8;
+}
+
+.ecosystem-list {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+}
+
+.ecosystem-list li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.industry-impact {
+    margin: 2.5rem 0;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(46,49,49,0.15);
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-desc {
+    display: block;
+    font-size: 0.95em;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.research-highlights {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    background: #fff8f0;
+    border-radius: 10px;
+    border: 1px solid #f4e5d3;
+}
+
+.research-highlights ul {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+}
+
+.research-highlights li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.future-vision {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    background: #f0fff4;
+    border-radius: 10px;
+    border: 1px solid #d4e8d9;
+}
+
+.future-vision ul {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+}
+
+.future-vision li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.site-navigation {
+    margin-top: 2.5rem;
+    padding: 1.2rem;
+    background: #eef2f7;
+    border-radius: 8px;
+    font-size: 1.05em;
+    border-left: 4px solid #2b5876;
+}
+
 /* Executive Summary slogan and hero image styling */
 .slogan-block {
     text-align: center;
@@ -283,4 +428,233 @@ footer {
     header h1 {
         font-size: 1.3rem;
     }
+}
+
+/* Historical Background styling */
+.timeline-section {
+    margin: 2rem 0;
+}
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #2b5876, #4e4376);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -1.5rem;
+    top: 0.5rem;
+    width: 4rem;
+    height: 2rem;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8em;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.2);
+}
+
+.timeline-content {
+    background: #f9fbfd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e1e8ed;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.06);
+}
+
+.timeline-content h4 {
+    margin: 0 0 0.8rem 0;
+    color: #2b5876;
+    font-size: 1.15em;
+}
+
+.timeline-content p {
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+}
+
+.conceptual-foundations {
+    margin: 3rem 0;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.philosophy-item {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #d1e3f8;
+    box-shadow: 0 3px 12px rgba(46,49,49,0.08);
+}
+
+.philosophy-item h4 {
+    margin: 0 0 1rem 0;
+    color: #2b5876;
+    font-size: 1.1em;
+}
+
+.philosophy-item p {
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+}
+
+.market-evolution {
+    margin: 3rem 0;
+}
+
+.adoption-analysis {
+    margin: 2rem 0;
+}
+
+.adoption-phase {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fff8f0;
+    border-radius: 10px;
+    border-left: 4px solid #f4a261;
+}
+
+.adoption-phase h4 {
+    margin: 0 0 1rem 0;
+    color: #2b5876;
+    font-size: 1.1em;
+}
+
+.adoption-phase ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.adoption-phase li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+.paradigm-comparison {
+    margin: 3rem 0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95em;
+    box-shadow: 0 3px 12px rgba(46,49,49,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 1rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.comparison-table thead tr {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: white;
+}
+
+.comparison-table thead th {
+    font-weight: 600;
+    border-bottom: none;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background: #f9fbfd;
+}
+
+.comparison-table tbody tr:hover {
+    background: #f0f7ff;
+}
+
+.comparison-table td:first-child {
+    font-weight: 600;
+    color: #2b5876;
+}
+
+.current-landscape {
+    margin: 3rem 0;
+}
+
+.landscape-trends {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.trend-item {
+    background: #f0fff4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #d4e8d9;
+    box-shadow: 0 2px 8px rgba(46,49,49,0.06);
+}
+
+.trend-item h4 {
+    margin: 0 0 0.8rem 0;
+    color: #2b5876;
+    font-size: 1.1em;
+}
+
+.trend-item p {
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+}
+
+.key-resources {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    background: #eef2f7;
+    border-radius: 10px;
+    border-left: 4px solid #2b5876;
+}
+
+.key-resources ul {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+}
+
+.key-resources li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.section-footer {
+    margin-top: 2.5rem;
+    padding: 1.2rem;
+    background: #f0f4f8;
+    border-radius: 8px;
+    border-left: 4px solid #4e4376;
+    font-size: 1.05em;
 }
