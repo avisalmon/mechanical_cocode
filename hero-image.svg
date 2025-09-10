@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Code editor window -->
+  <rect x="20" y="20" width="180" height="120" fill="#1e1e1e" rx="8"/>
+  <rect x="20" y="20" width="180" height="25" fill="#323233" rx="8 8 0 0"/>
+  <circle cx="35" cy="32.5" r="4" fill="#ff5f57"/>
+  <circle cx="50" cy="32.5" r="4" fill="#ffbd2e"/>
+  <circle cx="65" cy="32.5" r="4" fill="#28ca42"/>
+  
+  <!-- Code text -->
+  <text x="30" y="65" fill="#569cd6" font-family="monospace" font-size="10">function</text>
+  <text x="85" y="65" fill="#dcdcaa" font-family="monospace" font-size="10">createGear(</text>
+  <text x="30" y="80" fill="#ce9178" font-family="monospace" font-size="10">  teeth: 20,</text>
+  <text x="30" y="95" fill="#ce9178" font-family="monospace" font-size="10">  radius: 50</text>
+  <text x="30" y="110" fill="#dcdcaa" font-family="monospace" font-size="10">) {</text>
+  <text x="30" y="125" fill="#569cd6" font-family="monospace" font-size="10">  return</text>
+  <text x="75" y="125" fill="#4ec9b0" font-family="monospace" font-size="10">gear;</text>
+  
+  <!-- Mechanical gear -->
+  <g transform="translate(280, 100)">
+    <!-- Main gear body -->
+    <circle cx="0" cy="0" r="50" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2"/>
+    
+    <!-- Gear teeth -->
+    <g fill="#2c5aa0">
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(0)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(30)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(60)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(90)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(120)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(150)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(180)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(210)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(240)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(270)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(300)"/>
+      <rect x="-3" y="-52" width="6" height="8" transform="rotate(330)"/>
+    </g>
+    
+    <!-- Center hole -->
+    <circle cx="0" cy="0" r="12" fill="#ffffff" stroke="#2c5aa0" stroke-width="1"/>
+    
+    <!-- Spokes -->
+    <line x1="-35" y1="0" x2="35" y2="0" stroke="#2c5aa0" stroke-width="2"/>
+    <line x1="0" y1="-35" x2="0" y2="35" stroke="#2c5aa0" stroke-width="2"/>
+  </g>
+  
+  <!-- Arrow connecting code to gear -->
+  <path d="M 200 80 Q 240 60 250 100" stroke="#6c757d" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6c757d"/>
+    </marker>
+  </defs>
+  
+  <!-- CAD window -->
+  <rect x="200" y="180" width="180" height="100" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="8"/>
+  <rect x="200" y="180" width="180" height="25" fill="#e9ecef" rx="8 8 0 0"/>
+  <text x="210" y="197" fill="#495057" font-family="Arial" font-size="12" font-weight="bold">3D Model View</text>
+  
+  <!-- Simple 3D representation -->
+  <g transform="translate(290, 230)">
+    <!-- Isometric cube representing 3D model -->
+    <path d="M -20 10 L 0 -10 L 20 10 L 20 30 L 0 50 L -20 30 Z" fill="#74c0fc" stroke="#339af0" stroke-width="1"/>
+    <path d="M -20 10 L 0 -10 L 0 30 L -20 50 Z" fill="#5c7cfa" stroke="#339af0" stroke-width="1"/>
+    <path d="M 0 -10 L 20 10 L 20 30 L 0 30 Z" fill="#91a7ff" stroke="#339af0" stroke-width="1"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" fill="#2c5aa0" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Text-Based Mechanical Design</text>
+  <text x="200" y="50" fill="#6c757d" font-family="Arial" font-size="14" text-anchor="middle">Code → CAD → Manufacturing</text>
+</svg>
