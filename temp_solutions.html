@@ -1,0 +1,384 @@
+        <section id="solutions" class="tab-content">
+            <h2>Survey of Current Solutions</h2>
+            
+            <div class="solutions-intro">
+                <p class="intro-text">The text-based mechanical design ecosystem has evolved into a rich landscape of specialized tools and languages, each addressing different aspects of mechanical engineering. From geometry modeling to system simulation, these solutions span the complete product development lifecycle.</p>
+            </div>
+
+            <div class="solutions-categories">
+                <h3>Solution Categories</h3>
+                
+                <div class="category-overview">
+                    <div class="category-item">
+                        <h4>🔺 Geometry Modeling Languages</h4>
+                        <p>Tools for creating 3D solid models, assemblies, and parametric designs through code</p>
+                        <ul>
+                            <li>OpenSCAD, CadQuery, FeatureScript</li>
+                            <li>Focus on constructive solid geometry (CSG) and feature-based modeling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-item">
+                        <h4>⚙️ System Simulation Languages</h4>
+                        <p>Equation-based languages for modeling mechanical system behavior and dynamics</p>
+                        <ul>
+                            <li>Modelica, Simscape Language</li>
+                            <li>Multi-domain physics simulation and control system design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-item">
+                        <h4>🏭 Manufacturing & Specialized Languages</h4>
+                        <p>Domain-specific languages for manufacturing processes and specialized applications</p>
+                        <ul>
+                            <li>G-code, URDF, STEP-NC</li>
+                            <li>Toolpath generation, robot description, process planning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-item">
+                        <h4>🤖 AI-Enhanced Platforms</h4>
+                        <p>Next-generation platforms designed specifically for AI integration and natural language interaction</p>
+                        <ul>
+                            <li>KittyCAD KCL, AIDL research languages</li>
+                            <li>Cloud-native, LLM-optimized design environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detailed-tools">
+                <h3>Detailed Tool Analysis</h3>
+                
+                <div class="tool-analysis">
+                    <div class="tool-section">
+                        <h4><a href="https://openscad.org/" target="_blank">OpenSCAD - "The Programmer's Solid 3D CAD Modeller"</a></h4>
+                        
+                        <div class="tool-details">
+                            <div class="tool-pros-cons">
+                                <div class="pros">
+                                    <h5>Strengths</h5>
+                                    <ul>
+                                        <li>Simple, declarative language focused on CSG operations</li>
+                                        <li>Excellent for parametric designs and educational use</li>
+                                        <li>Large community and extensive model sharing via Thingiverse</li>
+                                        <li>Built-in Customizer enables GUI interaction with parametric models</li>
+                                        <li>Strong integration with 3D printing workflows</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h5>Limitations</h5>
+                                    <ul>
+                                        <li>No native support for sketches, constraints, or complex fillets</li>
+                                        <li>Performance issues with complex boolean operations</li>
+                                        <li>Static geometry only - no simulation capabilities</li>
+                                        <li>Limited to constructive solid geometry paradigm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="use-cases">
+                                <h5>Primary Use Cases</h5>
+                                <ul>
+                                    <li>3D printing and maker community projects</li>
+                                    <li>Educational computational design courses</li>
+                                    <li>Parametric mechanical parts (gears, brackets, enclosures)</li>
+                                    <li>Open hardware projects requiring reproducible designs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-section">
+                        <h4><a href="https://cadquery.readthedocs.io/" target="_blank">CadQuery - Python-Based CAD Scripting</a></h4>
+                        
+                        <div class="tool-details">
+                            <div class="tool-pros-cons">
+                                <div class="pros">
+                                    <h5>Strengths</h5>
+                                    <ul>
+                                        <li>Leverages Python ecosystem and OpenCASCADE kernel</li>
+                                        <li>Design-intent-driven API with relative positioning</li>
+                                        <li>Advanced geometric operations and constraints</li>
+                                        <li>Standard CAD format export (STEP, STL, etc.)</li>
+                                        <li>High AI co-coding potential due to Python familiarity</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h5>Limitations</h5>
+                                    <ul>
+                                        <li>Steeper learning curve than OpenSCAD</li>
+                                        <li>Requires Python programming knowledge</li>
+                                        <li>Limited integrated development environment</li>
+                                        <li>Documentation and community smaller than OpenSCAD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="use-cases">
+                                <h5>Primary Use Cases</h5>
+                                <ul>
+                                    <li>Professional parametric CAD automation</li>
+                                    <li>Integration with Python data science workflows</li>
+                                    <li>Complex geometric operations requiring precise control</li>
+                                    <li>AI-assisted design research and development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-section">
+                        <h4><a href="https://www.modelica.org/" target="_blank">Modelica - Multi-Domain System Modeling</a></h4>
+                        
+                        <div class="tool-details">
+                            <div class="tool-pros-cons">
+                                <div class="pros">
+                                    <h5>Strengths</h5>
+                                    <ul>
+                                        <li>Industry-standard for system simulation and controls</li>
+                                        <li>Equation-based, acausal modeling paradigm</li>
+                                        <li>Extensive standard library of mechanical components</li>
+                                        <li>Mature toolchain with commercial and open-source options</li>
+                                        <li>Proven scalability to very large, complex systems</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h5>Limitations</h5>
+                                    <ul>
+                                        <li>Complex syntax requiring significant domain knowledge</li>
+                                        <li>No direct 3D geometry generation capabilities</li>
+                                        <li>Steep learning curve for newcomers</li>
+                                        <li>Limited AI training data compared to general programming languages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="use-cases">
+                                <h5>Primary Use Cases</h5>
+                                <ul>
+                                    <li>Automotive systems (powertrain, suspension, thermal management)</li>
+                                    <li>Aerospace system modeling and simulation</li>
+                                    <li>Industrial automation and control system design</li>
+                                    <li>Multi-physics simulation (mechanical, electrical, thermal)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-section">
+                        <h4><a href="https://featurescript.onshape.com/" target="_blank">Onshape FeatureScript - Commercial CAD Scripting</a></h4>
+                        
+                        <div class="tool-details">
+                            <div class="tool-pros-cons">
+                                <div class="pros">
+                                    <h5>Strengths</h5>
+                                    <ul>
+                                        <li>Integrated into professional CAD platform</li>
+                                        <li>Custom feature creation and automation</li>
+                                        <li>Cloud-native development and deployment</li>
+                                        <li>Access to full Onshape CAD kernel capabilities</li>
+                                        <li>Strong integration with traditional CAD workflows</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h5>Limitations</h5>
+                                    <ul>
+                                        <li>Proprietary platform with vendor lock-in</li>
+                                        <li>Limited availability in AI training datasets</li>
+                                        <li>Requires Onshape subscription for advanced features</li>
+                                        <li>Smaller community compared to open-source alternatives</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="use-cases">
+                                <h5>Primary Use Cases</h5>
+                                <ul>
+                                    <li>Custom feature development for specific industries</li>
+                                    <li>Automation of repetitive CAD tasks</li>
+                                    <li>Integration of design rules and corporate standards</li>
+                                    <li>Bridging between traditional and code-based CAD workflows</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-matrix">
+                <h3>Comprehensive Feature Comparison</h3>
+                
+                <div class="matrix-container">
+                    <table class="feature-matrix">
+                        <thead>
+                            <tr>
+                                <th>Tool/Platform</th>
+                                <th>Language Base</th>
+                                <th>Parametric Design</th>
+                                <th>Simulation</th>
+                                <th>Open Source</th>
+                                <th>Industry Adoption</th>
+                                <th>AI Co-Coding Potential</th>
+                                <th>Learning Curve</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://openscad.org/" target="_blank">OpenSCAD</a></td>
+                                <td>Custom DSL</td>
+                                <td>✅ Excellent</td>
+                                <td>❌ None</td>
+                                <td>✅ Yes</td>
+                                <td>🟡 Hobbyist/Education</td>
+                                <td>🟡 Moderate</td>
+                                <td>🟢 Low</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://cadquery.readthedocs.io/" target="_blank">CadQuery</a></td>
+                                <td>Python EDSL</td>
+                                <td>✅ Excellent</td>
+                                <td>❌ None</td>
+                                <td>✅ Yes</td>
+                                <td>🟡 Growing</td>
+                                <td>✅ High</td>
+                                <td>🟡 Medium</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.modelica.org/" target="_blank">Modelica</a></td>
+                                <td>Equation-based</td>
+                                <td>✅ Good</td>
+                                <td>✅ Excellent</td>
+                                <td>✅ Standard</td>
+                                <td>✅ High (Auto/Aero)</td>
+                                <td>🟡 Medium</td>
+                                <td>🔴 High</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://featurescript.onshape.com/" target="_blank">FeatureScript</a></td>
+                                <td>JavaScript-like</td>
+                                <td>✅ Excellent</td>
+                                <td>❌ Limited</td>
+                                <td>❌ Proprietary</td>
+                                <td>🟡 Professional</td>
+                                <td>🟡 Medium</td>
+                                <td>🟡 Medium</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.freecadweb.org/" target="_blank">FreeCAD Python</a></td>
+                                <td>Python API</td>
+                                <td>✅ Good</td>
+                                <td>🟡 Limited</td>
+                                <td>✅ Yes</td>
+                                <td>🟡 Growing</td>
+                                <td>✅ High</td>
+                                <td>🟡 Medium</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://zoo.dev" target="_blank">KittyCAD KCL</a></td>
+                                <td>Python-derived</td>
+                                <td>✅ Excellent</td>
+                                <td>🟡 Planned</td>
+                                <td>❌ Proprietary</td>
+                                <td>🟡 Emerging</td>
+                                <td>✅ Very High</td>
+                                <td>🟡 Medium</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="emerging-trends">
+                <h3>Emerging Trends & Next-Generation Tools</h3>
+                
+                <div class="trend-analysis">
+                    <div class="trend-category">
+                        <h4>🚀 AI-Native Platforms</h4>
+                        <p>New platforms designed from the ground up for AI integration:</p>
+                        <ul>
+                            <li><strong>KittyCAD KCL:</strong> Cloud-native CAD language explicitly designed for LLM generation</li>
+                            <li><strong>AIDL Research:</strong> Hierarchical constraint languages that guide AI toward valid geometry</li>
+                            <li><strong>Text2CAD Projects:</strong> Direct natural language to parametric model generation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="trend-category">
+                        <h4>🔧 Alternative Geometry Kernels</h4>
+                        <p>Innovative approaches to geometric modeling:</p>
+                        <ul>
+                            <li><strong>Fornjot (Rust):</strong> Code-first CAD kernel designed for modern development practices</li>
+                            <li><strong>ImplicitCAD (Haskell):</strong> Functional programming approach to solid modeling</li>
+                            <li><strong>OpenJSCAD (JavaScript):</strong> Browser-based scripting for web-native CAD</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="trend-category">
+                        <h4>📊 Integration Platforms</h4>
+                        <p>Tools that bridge multiple domains and workflows:</p>
+                        <ul>
+                            <li><strong>Jupyter-CAD Integrations:</strong> Scientific computing meets parametric design</li>
+                            <li><strong>VS Code Extensions:</strong> PartCAD and other AI-assisted design plugins</li>
+                            <li><strong>Cloud APIs:</strong> Onshape API, Fusion 360 API enabling programmatic access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="industry-case-studies">
+                <h3>Industry Adoption Case Studies</h3>
+                
+                <div class="case-study-grid">
+                    <div class="case-study">
+                        <h4>🚗 Automotive Industry</h4>
+                        <div class="case-content">
+                            <p><strong>Companies:</strong> Audi, BMW, Ford, Toyota</p>
+                            <p><strong>Application:</strong> Vehicle system modeling with Modelica</p>
+                            <p><strong>Impact:</strong> Reduced physical prototyping, integrated control system development, multi-domain optimization</p>
+                            <p><strong>Scale:</strong> Entire vehicle systems from powertrain to thermal management</p>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h4>🛩️ Aerospace Industry</h4>
+                        <div class="case-content">
+                            <p><strong>Applications:</strong> Aircraft systems, satellite design, control systems</p>
+                            <p><strong>Tools:</strong> Modelica, custom DSLs, MATLAB/Simulink integration</p>
+                            <p><strong>Benefits:</strong> System-of-systems modeling, verification and validation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h4>🔧 Maker Community</h4>
+                        <div class="case-content">
+                            <p><strong>Platform:</strong> Thingiverse with OpenSCAD integration</p>
+                            <p><strong>Impact:</strong> Millions of parametric models, mass customization</p>
+                            <p><strong>Innovation:</strong> Democratized design, rapid prototyping, educational applications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h4>🏭 Industrial Equipment</h4>
+                        <div class="case-content">
+                            <p><strong>Use Cases:</strong> Custom machinery, automation systems</p>
+                            <p><strong>Approach:</strong> Python-based CAD automation, parametric configurators</p>
+                            <p><strong>Value:</strong> Reduced design time, consistent standards, automated documentation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-conclusion">
+                <div class="conclusion-box">
+                    <h4>Key Takeaways</h4>
+                    <p>The text-based mechanical design ecosystem is rapidly maturing, with tools spanning from beginner-friendly scripting languages to industrial-grade simulation platforms. The integration of AI is accelerating adoption and lowering barriers to entry, while industry case studies demonstrate real-world value at scale.</p>
+                    
+                    <p><strong>Recommended Starting Points:</strong></p>
+                    <ul>
+                        <li><strong>Beginners:</strong> Start with OpenSCAD for learning computational design concepts</li>
+                        <li><strong>Python Users:</strong> Explore CadQuery for professional parametric modeling</li>
+                        <li><strong>System Engineers:</strong> Learn Modelica for multi-domain simulation</li>
+                        <li><strong>Industry Users:</strong> Investigate FeatureScript for CAD automation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <p><strong>Comprehensive Analysis:</strong> For detailed technical specifications, performance comparisons, and implementation guidance, see the <a href="Text-Based Mechanical Description Languages and Co-Coding for Mechanical Design.pdf" target="_blank">complete research report (PDF)</a> or <a href="Text-Based Mechanical Description Languages and Co-Coding for Mechanical Design.docx" target="_blank">download the DOCX version</a>.</p>
+            </div>
+        </section>
